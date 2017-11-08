@@ -40,9 +40,10 @@ export default {
         .catch((err) => this.onError(err))
     },
     initClient (mode, apikey, options, file, security, cname) {
-      const { url, handle } = options
+      const url = options.url
+      const handle = options.handle
       const client = filestack.init(apikey, security, cname)
-      const ops = { ...options }
+      const ops = Object.assign({}, options)
       delete ops.handle
       delete ops.url
 
