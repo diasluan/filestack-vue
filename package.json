@@ -1,6 +1,6 @@
 {
   "name": "filestack-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue component for Filestack - API and content management system that makes it easy to add powerful file uploading and transformation capabilities to any web or mobile application. via @TipeIO",
   "author": "PatrickJS <patrick@tipe.io>",
   "main": "dist/index.js",
