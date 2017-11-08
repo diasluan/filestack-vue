@@ -2,9 +2,9 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname + '/src/Filestack.vue'),
+  entry: './src/Filestack.vue',
   output: {
-    path: path.resolve(__dirname + '/dist/'),
+    path: path.join(__dirname, 'dist'),
     filename: 'index.js'
   },
   externals: {
@@ -15,28 +15,31 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         include: __dirname,
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        options: {
+          presets: ['@babel/preset-env']
+        }
       },
       {
         test: /\.vue$/,
-        loader: 'vue'
+        loader: 'vue-loader'
       },
       {
         test: /\.css$/,
-        loader: 'style!less!css'
+        loader: 'style-loader!less-loader!css-loader'
       }
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin( {
-      minimize : true,
-      sourceMap : false,
-      mangle: true,
-      compress: {
-        warnings: false
-      }
-    })
+    // new webpack.optimize.UglifyJsPlugin( {
+    //   minimize : true,
+    //   sourceMap : false,
+    //   mangle: true,
+    //   compress: {
+    //     warnings: false
+    //   }
+    // })
   ]
 };
