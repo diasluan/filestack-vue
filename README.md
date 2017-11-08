@@ -6,7 +6,7 @@
 
 ___
 
-[![NPM Version](https://img.shields.io/badge/npm-1.3.8-red.svg)](https://www.npmjs.com/package/filestack-vue)
+[![NPM Version](https://img.shields.io/badge/npm-1.0.1-green.svg)](https://www.npmjs.com/package/filestack-vue)
 <!-- [![Package Quality](http://npm.packagequality.com/shield/vue-filestack.svg)](http://packagequality.com/#?package=filestack-vue) -->
 
 # Filestack Vue
