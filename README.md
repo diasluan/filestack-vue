@@ -206,4 +206,5 @@ If you have problems, please create a [Github Issue](https://github.com/TipeIO/f
 <!-- Please see [CONTRIBUTING.md](https://github.com/filestack/filestack-vue/blob/master/CONTRIBUTING.md) for details. -->
 
 ## Contributors
+- [Tipe](https://github.com/tipeio)
 - [PatrickJS](https://github.com/gdi2290)
