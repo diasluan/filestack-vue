@@ -53,10 +53,8 @@ You should register [Filestack](https://www.filestack.com) website and get an **
 ```html
 <filestack
   :apikey="YOUR_API_KEY"
-  buttonText="Click me"
-  buttonClass="classname"
   :options="options"
-  @success.prevent="yourCallbackFunction"
+  @success="yourCallbackFunction"
 >
   <div>
     Click here to upload
@@ -69,8 +67,8 @@ You should register [Filestack](https://www.filestack.com) website and get an **
 <filestack
   :apikey="apikey"
   :options="options"
-  @success.prevent="onSuccess"
-  @error.prevent="onError"
+  @success="onSuccess"
+  @error="onError"
 >
   <div>
     <strong>Find an avatar</strong>
@@ -85,7 +83,7 @@ You should register [Filestack](https://www.filestack.com) website and get an **
   mode="upload"
   :apikey="YOUR_API_KEY"
   :options="options"
-  @success.prevent="onSuccess"
+  @success="onSuccess"
 >
   <div>
     Click here to upload
@@ -125,7 +123,7 @@ You can pass a custom prop **link**.
 <filestack
   :apikey="YOUR_API_KEY"
   :options="options"
-  @success.prevent="yourSuccessCallbackFunction"
+  @success="yourSuccessCallbackFunction"
 >
   <div>
     Click here to upload
