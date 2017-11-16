@@ -14,8 +14,6 @@ export default {
     file: VueTypes.objectOf(VueTypes.any).def(null),
     link: VueTypes.bool.def(false),
     mode: VueTypes.string.def('pick'),
-    buttonText: VueTypes.string.def('Pick File'),
-    buttonClass: VueTypes.string.def(''),
     options: VueTypes.objectOf(VueTypes.any).def({}),
     security: VueTypes.objectOf(VueTypes.any).def(null),
     cname: VueTypes.string.def(null)
